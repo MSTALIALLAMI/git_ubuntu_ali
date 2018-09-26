@@ -1,2 +1,5 @@
 //search of some word in the machin
  $sudo grep -R protocolConnectTcp2P
+
+//another way to seach of some word
+$find . -name '*oblie.h*' -print
