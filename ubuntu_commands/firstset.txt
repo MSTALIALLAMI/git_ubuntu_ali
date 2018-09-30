@@ -3,3 +3,6 @@
 
 //another way to seach of some word
 $find . -name '*oblie.h*' -print
+
+//to listen to tcp/ip at a specific port use the following command
+ali@ALI:~$ sudo tcpick -C -bCU -T1 "port 1444"
