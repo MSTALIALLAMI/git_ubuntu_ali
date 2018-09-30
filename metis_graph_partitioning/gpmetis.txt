@@ -1,0 +1,16 @@
+Installing METIS on Ubuntu: 
+There are two main way, I would call them complicated but solid and the other one is the simple but it may not work:
+1-
+$ make config
+$ make
+$ make install
+At this point every thing should work in case you ace the cmake and the other dependents. If it gives you a problem
+then keep doing the coming step
+
+$ export CPLUS_INCLUDE_PATH=$HOME/metis/include:$CPLUS_INCLUDE_PATH
+$ source ~/.bashrc
+up to this point it should work smoothly.
+
+2- This is the simplest way ever to do this job
+just run the following command
+$ sudo apt-get install metis
