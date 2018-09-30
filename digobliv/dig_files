@@ -1,0 +1,7 @@
+the file that has the 128 AES encryption
+/home/ali/obliv-c/test/oblivc/aes/aes.oc
+
+
+//this file is edited at line (91)
+/home/ali/obliv-c/src/ext/oblivc/obliv_bits.c
+//with the statement added (fprint to track the size of n)
