@@ -27,20 +27,24 @@ void DtoB(mpz_t n)
     mpz_set_ui(i,0);
     while (n > 0) {
         // storing remainder in binary array
-        binaryNum[i] = n % 2;
-        n = n / 2;
-        i++;
+        mpz_mod_ui(*binaryNum+i,n,2);
+        mpz_divexact_ui(n.n,2);
+        mpz_add_ui(i,i,1);
+    }
+    // printing binary array in reverse order
+    int i=0;
+    for (int j = i - 1; j >= 0; j--){
+      mpz_set(*binary2+i,*binaryNum+j);
+      cout << *binaryNum+j;
+      i++;
     }
 
-    // printing binary array in reverse order
-    for (int j = i - 1; j >= 0; j--)
-        cout << binaryNum[j];
 }
 
 // Driver program to test above function
 int main()
 {
-    int n = 17;
-    decToBinary(n);
+    mpz_get_ui(n,17);
+    DtoB(n);
     return 0;
 }
