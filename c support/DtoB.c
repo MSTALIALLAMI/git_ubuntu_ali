@@ -17,15 +17,15 @@
 using namespace std;
 
 // function to convert decimal to binary
-void decToBinary(int n)
+void DtoB(mpz_t n)
 {
     // array to store binary number
-    int binaryNum[1000];
-
+    // binaryNum[1000];
+    //need to be defined and inicialized in the main program of the scomp
+    mpz_t *binaryNum;
     // counter for binary array
-    int i = 0;
+    mpz_set_ui(i,0);
     while (n > 0) {
-
         // storing remainder in binary array
         binaryNum[i] = n % 2;
         n = n / 2;
@@ -43,4 +43,4 @@ int main()
     int n = 17;
     decToBinary(n);
     return 0;
-} 
+}
