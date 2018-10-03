@@ -1,8 +1,23 @@
-
+//THIS IS NOT DONE YET NEED MORE WORK
 //This link has awesome information
 //https://www.cyberciti.biz/faq/linux-freebsd-gcc-cc-see-c-program-output/
 // Convert binary to decimal in c++ using GMP library to facilitate the bignumbers
 #include<iostream>
+#include<iostream>
+#include <math.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<assert.h>
+#include<gmp.h>
+#include<stdint.h>
+#include<inttypes.h>
+#include<errno.h>
+#include <unistd.h>
+#include <time.h>
+#include <string.h>
+#include <bitset>
+#include<string>
+#include<ctime>
 using namespace std;
 // Function to convert binary to decimal
 int BToD(mpz_t n)
@@ -21,14 +36,14 @@ int BToD(mpz_t n)
         mpz_add(dec_value,dec_value,last_digit); += last_digit*base;
         mpz_mod_ui(base,base,2);
     }
-
+    cout<<
     return dec_value;
 }
 
 // Driver program to test above function
 int main()
 {
-    int num = 10101001;
-
-    cout < <binaryToDecimal(num)<<endl;
+    mpz_set_ui(num,10101001);
+    BToD(num);
+    //cout < <<<endl;
 }
