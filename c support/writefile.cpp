@@ -1,4 +1,4 @@
-/ writing on a text file
+// writing on a text file
 #include <iostream>
 #include <fstream>
 using namespace std;
